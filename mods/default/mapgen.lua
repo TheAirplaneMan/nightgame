@@ -1708,11 +1708,11 @@ function default.register_mgv6_decorations()
 	minetest.register_decoration({
 		name = "default:dry_shrub",
 		deco_type = "simple",
-		place_on = {"default:desert_sand", "default:dirt_with_snow"},
+		place_on = {"default:dirt_with_snow", "default:dirt", "default:dry_dirt"},
 		sidelen = 16,
 		noise_params = {
 			offset = 0,
-			scale = 0.035,
+			scale = 0.05,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 329,
 			octaves = 3,
@@ -1759,8 +1759,8 @@ function default.register_decorations()
 	minetest.register_decoration({
 		name = "default:dry_shrub",
 		deco_type = "simple",
-		place_on = {"default:desert_sand",
-			"default:sand", "default:silver_sand"},
+		place_on = {"default:dirt",
+			"default:dry_dirt", "default:desert_sand"},
 		sidelen = 16,
 		noise_params = {
 			offset = 0,
@@ -1770,7 +1770,7 @@ function default.register_decorations()
 			octaves = 3,
 			persist = 0.6
 		},
-		biomes = {"desert", "sandstone_desert", "cold_desert"},
+		biomes = {"desert", "decideous_forest", "coniferous_forest", "grassland", "savanna"},
 		y_max = 31000,
 		y_min = 2,
 		decoration = "default:dry_shrub",

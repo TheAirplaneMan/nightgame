@@ -3,14 +3,6 @@
 -- support for MT game translation.
 local S = farming.get_translator
 
-farming.register_hoe(":farming:hoe_wood", {
-	description = S("Wooden Hoe"),
-	inventory_image = "farming_tool_woodhoe.png",
-	max_uses = 30,
-	material = "group:wood",
-	groups = {hoe = 1, flammable = 2},
-})
-
 farming.register_hoe(":farming:hoe_stone", {
 	description = S("Stone Hoe"),
 	inventory_image = "farming_tool_stonehoe.png",

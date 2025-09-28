@@ -18,7 +18,6 @@ dungeon_loot.registered_loot = {
 	{name = "default:mese_crystal", chance = 0.1, count = {2, 3}},
 
 	-- tools
-	{name = "default:sword_wood", chance = 0.6},
 	{name = "default:pick_stone", chance = 0.3},
 	{name = "default:axe_diamond", chance = 0.05},
 

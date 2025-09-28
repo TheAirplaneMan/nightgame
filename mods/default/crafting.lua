@@ -1,6 +1,22 @@
 -- mods/default/crafting.lua
 
 minetest.register_craft({
+	output = "default:stick",
+	recipe = {
+		{"default:dry_shrub"},
+		{"default:dry_shrub"},
+	}
+})
+
+minetest.register_craft({
+	output = "default:flint",
+	recipe = {
+		{"default:gravel", "default:gravel"},
+		{"default:gravel", "default:gravel"},
+	}
+})
+
+minetest.register_craft({
 	output = "default:wood 4",
 	recipe = {
 		{"default:tree"},

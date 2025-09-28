@@ -87,7 +87,7 @@ if not mobs.custom_spawn_monster then
 
 	mobs:spawn({
 		name = "mobs_monster:dirt_monster",
-		nodes = {"default:dirt_with_grass", "ethereal:gray_dirt", "ethereal:dry_dirt"},
+		nodes = {"default:dirt", "ethereal:gray_dirt", "ethereal:dry_dirt"},
 		min_light = 0,
 		max_light = 7,
 		chance = 6000,
