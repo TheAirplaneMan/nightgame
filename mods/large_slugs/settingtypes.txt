@@ -1,0 +1,41 @@
+# Copyright (C) 2021  Jude Melton-Houghton
+#
+# This file is part of large_slugs. It specifies the mod settings.
+#
+# large_slugs is free software: you can redistribute it and/or modify it
+# under the terms of the GNU Lesser General Public License as published
+# by the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# large_slugs is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with large_slugs. If not, see <https://www.gnu.org/licenses/>.
+
+
+# Whether to simulate slug movement and reproduction using periodic updates, taking up a bit of CPU time.
+large_slugs_do_behavior (Do slug behavior) bool true
+
+# The interval in seconds at which to schedule updates for some slugs if behavior is enabled.
+large_slugs_update_interval (Slug update interval) float 5 0 30000
+
+# The chance that a slug is updated in a given round of updates is one over this value.
+large_slugs_update_chance (Slug update chance) int 5 1 30000
+
+# The chance that an updating non-dying slug tries to gives birth instead of moving is one over this value.
+large_slugs_birth_chance (Slug birth chance) int 6 1 30000
+
+# The chance that an updating slug tries to die instead of moving or giving birth is one over this value.
+large_slugs_death_chance (Slug death chance) int 6 1 30000
+
+# The maximum population around a slug, including the slug itself, at which it can give birth.
+large_slugs_underpopulation (Slug underpopulation) int 1 1 30000
+
+# The minimum population around a slug, including the slug itself, at which it can die.
+large_slugs_overpopulation (Slug overpopulation) int 3 1 30000
+
+# The radius around a slug (using a maximum metric) checked before birth and death.
+large_slugs_check_radius (Slug check radius) int 5 0 30000
